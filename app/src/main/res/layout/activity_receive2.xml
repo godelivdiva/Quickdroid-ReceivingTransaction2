@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Receive2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:src="@drawable/info"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/refresh"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_below="@id/ll_top"
+            android:background="#F2F2F2"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/PoNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PO Number           : "
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tv_PoNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ShipmentNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shipment Number: "
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tv_ShipmentNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ReceiptNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Receipt Number   : "
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tv_ReceiptNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item                     : "
+                android:textAppearance="?android:textAppearanceLarge" />
+            <TextView
+                android:id="@+id/tv_Item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ItemDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Desc           : "
+                android:textAppearance="?android:textAppearanceLarge" />
+            <TextView
+                android:id="@+id/tv_ItemDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Requestor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Requestor           : "
+                android:textAppearance="?android:textAppearanceLarge" />
+            <TextView
+                android:id="@+id/tv_Requestor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QTY                      : "
+                android:textAppearance="?android:textAppearanceLarge" />
+            <TextView
+                android:id="@+id/tv_Qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Uom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UOM                    : "
+                android:textAppearance="?android:textAppearanceLarge" />
+            <TextView
+                android:id="@+id/tv_Uom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/TglDibuat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Dibuat  : "
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tv_TglDibuat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/TglDiterima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Dibuat  : "
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tv_TglDiterima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Shippement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shippement        : "
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tv_Shippement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/StatusBarang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status Barang    : "
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tv_StatusBarang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location              : "
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tv_Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comments         : "
+                android:textAppearance="?android:textAppearanceLarge" />
+            <TextView
+                android:id="@+id/tv_Comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosong, Harap Refresh"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>-->
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_scann"
+                android:src="@drawable/home"
+                />
+
+            <ImageView
+                android:id="@+id/refresh"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_scann"
+                android:src="@drawable/refreshpng"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

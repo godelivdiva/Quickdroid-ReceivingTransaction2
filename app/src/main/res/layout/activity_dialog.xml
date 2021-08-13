@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="CAH1C13002A1-0"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorFont"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHACKLE RR SPRING (BLANK CAST)"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorFont"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorFont"
+                android:text="Qty Receive : "/>
+
+            <TextView
+                android:id="@+id/tv_QtyReceive"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/colorFont"
+                android:text="48"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/colorFont"
+                android:text="Qty Remaining : "/>
+
+            <TextView
+                android:id="@+id/tv_Remaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/colorFont"
+                android:text="48"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/colorFont"
+                android:text="QTY TRANSFER : "/>
+            <EditText
+                android:id="@+id/et_qty"
+                android:layout_width="50dp"     
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Qty"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/colorFont"
+                android:text="Reason Code : "/>
+            <Spinner
+                android:id="@+id/s_rcode"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <!--<AutoCompleteTextView
+            android:id="@+id/editTextDialogUserInputKodeBarangAuto"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:hint="ketik untuk mencari kode barang..." />
+
+        <Button
+            android:id="@+id/bt_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/pure"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />-->
+
+    </LinearLayout>
+
+</LinearLayout>

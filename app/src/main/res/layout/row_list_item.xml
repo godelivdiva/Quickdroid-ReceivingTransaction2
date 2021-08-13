@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_urut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:textSize="80px"
+                    android:text="1"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/ItemCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Item Code        : "
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/tv_ItemCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IAOCFVAA01A030"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/ItemDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Item Desc        : "
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/tv_ItemDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V BELT A - 30 MITSUBOSHI"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Requestor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Requestor        : "
+                    android:textAppearance="?android:textAppearanceLarge" />
+                <TextView
+                    android:id="@+id/tv_Requestor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LARAS W., M.SHINTO"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/QtyReceive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QTY                   : "
+                    android:textAppearance="?android:textAppearanceLarge" />
+                <TextView
+                    android:id="@+id/tv_QtyReceive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="30 Pieces"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/StatusBarang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status Barang : "
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/tv_StatusBarang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Belum QC"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location           : "
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/tv_Location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BLK-DM"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comments       : "
+                    android:textAppearance="?android:textAppearanceLarge" />
+                <TextView
+                    android:id="@+id/tv_Comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="kosong"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceiveActivity">
+
+    <LinearLayout
+        android:id="@+id/sp_io"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="12dp">
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Organization Code : "/>
+        <Spinner
+            android:layout_marginTop="4.5dp"
+            android:id="@+id/s_org_code"
+            android:layout_width="170dp"
+            android:layout_height="24dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        android:layout_below="@id/sp_io">
+
+        <ImageView
+            android:id="@+id/iv_scann"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_scann"
+            android:padding="12dp"
+            android:src="@drawable/i_scan" />
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:hint="Scan"
+            android:maxLines="1"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="5dp"
+            android:padding="12dp"
+            android:src="@drawable/search" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alert"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_below="@id/ll_top"/>
+
+<RelativeLayout
+    android:id="@+id/ll_cb"
+    android:layout_below="@+id/tv_alert"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/cb_selectall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select All" />
+
+<!--<Button
+    android:id="@+id/bt_unselect"
+    android:layout_marginRight="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="UnSelect All"
+    android:textAllCaps="false"/>-->
+</RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hasil_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_cb"
+        android:background="#e0e0e0"
+        android:cacheColorHint="@android:color/transparent"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        />
+
+    <!--<Button
+        android:id="@+id/refresh"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/reload"
+        android:onClick="refresh"/>-->
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_scann"
+        android:src="@drawable/refreshpng"
+        />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_scann"
+        android:src="@drawable/next"
+        />
+
+</RelativeLayout>

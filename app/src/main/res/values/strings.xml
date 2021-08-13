@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Receiving Transaction</string>
+    <string name="alert">Jika Proses Tidak Berjalan Semestinya, Harap Ulangi Lagi Dalam Beberapa Saat.</string>
+    <string name="refresh">Jika Receipt-Number Belum Muncul, Harap Tunggu dan Klik Tombol Refresh Hingga Muncul Receipt-Number.</string>
+    <string-array name="spinner">
+        <item>Accept</item>
+        <item>Reject</item>
+    </string-array>
+    <string-array name="spinner_qcode">
+        <item>OK</item>
+        <item>OK B</item>
+        <item>OK Khusus</item>
+        <item>OK Memo</item>
+        <item>Not OK Proses</item>
+        <item>Not OK Material</item>
+    </string-array>
+</resources>

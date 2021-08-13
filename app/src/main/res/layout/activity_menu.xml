@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:paddingTop="45dp"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/receive"
+        android:drawableLeft="@drawable/receive"
+        android:padding="10dp"
+        android:text="receive"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:onClick="receive"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/transfer"
+        android:drawableLeft="@drawable/transfer"
+        android:padding="10dp"
+        android:text="Transfer"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_marginTop="30dp"
+        android:onClick="transfer"/>
+
+    <!--android:background="@color/accept" <Background Accept-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accept"
+        android:drawableLeft="@drawable/check"
+        android:padding="10dp"
+        android:text="Accept"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_marginTop="30dp"
+        android:onClick="accept"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/delives"
+        android:drawableLeft="@drawable/deliv"
+        android:padding="10dp"
+        android:text="Deliver"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_marginTop="30dp"
+        android:onClick="delives"
+        />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorAccent">#757575</color>
+
+    <color name="receive">#032a33</color>
+    <color name="transfer">#305f72</color>
+    <color name="accept">#255965</color>
+    <color name="delives">#4c6f7b</color>
+    <color name="pure">#182952</color>
+    <color name="red">#A72626</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="colorFont">#212121</color>
+</resources>

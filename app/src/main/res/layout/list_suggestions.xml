@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+//view suggest multipleline
+    <TextView
+        android:id="@+id/textSuggest"
+        style="?android:attr/dropDownItemStyle"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:singleLine="false"
+        android:ellipsize="none"
+        />
+
+</LinearLayout>
+
+

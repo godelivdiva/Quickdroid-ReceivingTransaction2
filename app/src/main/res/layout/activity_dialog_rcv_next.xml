@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/colorFont"
+                android:text="INPUT DATE :"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp">
+
+            <Button
+                android:id="@+id/bt_receipt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/pure"
+                android:text=" Receipt DATE : "
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_receipt"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/colorFont"
+                android:text="21-11-1900"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="4dp">
+
+            <Button
+                android:id="@+id/bt_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/pure"
+                android:text=" Receipt Time : "
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/colorFont"
+                android:text="00:00:00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="2dp">
+
+            <Button
+                android:id="@+id/bt_shipped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/pure"
+                android:text=" Shipped DATE : "
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_shipped"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/colorFont"
+                android:text="21-11-1900"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/colorFont"
+                android:text="Shipment : "/>
+            <EditText
+                android:id="@+id/et_shipment"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Shipment Number"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
